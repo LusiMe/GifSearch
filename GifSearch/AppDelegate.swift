@@ -34,7 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var player: AVAudioPlayer?
 
     func playSound() {
-        guard let url = Bundle.main.url(forResource: "soundName", withExtension: "mp3") else { return }
+        guard let url = Bundle.main.url(forResource: "midnight", withExtension: "mp3") else { return }
 
         do {
             try AVAudioSession.sharedInstance().setCategory(.playback, mode: .default)

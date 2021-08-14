@@ -6,17 +6,19 @@
 //
 
 import Foundation
-
-struct Model{
-    var gifURL: URL
-    
-    init(_ dictionary: [String: Any]) {
-        self.gifURL = dictionary["name"] as! URL
-}
-}
+import SwiftyJSON
 
 struct Root: Codable {
     let data: [Datum]
+    
+    init(gifData: JSON) {
+        let jsonData = gifData.rawString()?.data(using: .utf8);
+        if let root = try? JSONDecoder().decode(Root.self, from: jsonData!) {
+            self.data = root.data
+        } else {
+            self.data = []
+        }
+    }
 }
 
 struct Datum: Codable {

@@ -17,6 +17,8 @@
 		C6865C8026C01E4B00E4A8F9 /* ServerCommunication.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6865C7F26C01E4B00E4A8F9 /* ServerCommunication.swift */; };
 		C6865C8826C021F900E4A8F9 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6865C8726C021F900E4A8F9 /* CollectionViewCell.swift */; };
 		C6865C9D26C66BE000E4A8F9 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6865C9C26C66BE000E4A8F9 /* Model.swift */; };
+		C6865CAD26C8108E00E4A8F9 /* midnight.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = C6865CAC26C8108E00E4A8F9 /* midnight.mp3 */; };
+		C6865CB226C8221000E4A8F9 /* Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6865CB126C8221000E4A8F9 /* Helpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		C6865C7F26C01E4B00E4A8F9 /* ServerCommunication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerCommunication.swift; sourceTree = "<group>"; };
 		C6865C8726C021F900E4A8F9 /* CollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		C6865C9C26C66BE000E4A8F9 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		C6865CAC26C8108E00E4A8F9 /* midnight.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = midnight.mp3; sourceTree = "<group>"; };
+		C6865CB126C8221000E4A8F9 /* Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helpers.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		C6865C5B26C01C3200E4A8F9 = {
 			isa = PBXGroup;
 			children = (
+				C6865CAC26C8108E00E4A8F9 /* midnight.mp3 */,
 				C6865C6626C01C3200E4A8F9 /* GifSearch */,
 				C6865C6526C01C3200E4A8F9 /* Products */,
 				B45CED25C55604508D840AC7 /* Pods */,
@@ -86,7 +91,7 @@
 		C6865C6626C01C3200E4A8F9 /* GifSearch */ = {
 			isa = PBXGroup;
 			children = (
-				C6865C7E26C01C7600E4A8F9 /* Moduls */,
+				C6865C7E26C01C7600E4A8F9 /* Modules */,
 				C6865C7C26C01C3D00E4A8F9 /* Services */,
 				C6865C6726C01C3200E4A8F9 /* AppDelegate.swift */,
 				C6865C6926C01C3200E4A8F9 /* SceneDelegate.swift */,
@@ -103,17 +108,18 @@
 			isa = PBXGroup;
 			children = (
 				C6865C7F26C01E4B00E4A8F9 /* ServerCommunication.swift */,
+				C6865CB126C8221000E4A8F9 /* Helpers.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
 		};
-		C6865C7E26C01C7600E4A8F9 /* Moduls */ = {
+		C6865C7E26C01C7600E4A8F9 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
 				C6865C6B26C01C3200E4A8F9 /* ViewController.swift */,
 				C6865C8726C021F900E4A8F9 /* CollectionViewCell.swift */,
 			);
-			path = Moduls;
+			path = Modules;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6865CAD26C8108E00E4A8F9 /* midnight.mp3 in Resources */,
 				C6865C7426C01C3400E4A8F9 /* LaunchScreen.storyboard in Resources */,
 				C6865C7126C01C3400E4A8F9 /* Assets.xcassets in Resources */,
 				C6865C6F26C01C3200E4A8F9 /* Main.storyboard in Resources */,
@@ -231,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				C6865C8826C021F900E4A8F9 /* CollectionViewCell.swift in Sources */,
+				C6865CB226C8221000E4A8F9 /* Helpers.swift in Sources */,
 				C6865C6C26C01C3200E4A8F9 /* ViewController.swift in Sources */,
 				C6865C8026C01E4B00E4A8F9 /* ServerCommunication.swift in Sources */,
 				C6865C9D26C66BE000E4A8F9 /* Model.swift in Sources */,

@@ -15,9 +15,20 @@ class ServerCommunication {
 
     private let SEARCH_URL = "https://api.giphy.com/v1/gifs/search"
     
+    private let TRANDING_URL = "https://api.giphy.com/v1/gifs/trending"
+    
     private let KEY = "9Qgba90yKllH4hHLLBvr2zoQHrapaQfV"
     
-    public func searchRequest(key: String, onSuccess: @escaping(JSON) -> Void, onFailure: @escaping(Error) -> Void) {
+    public func getTrandingGIFs(onSuccess: @escaping(JSON) -> Void, onFailure: @escaping(Error) -> Void) {
+        let parameters: Parameters = [
+            "limit": 18,
+            "rating": "g",
+            "api_key": KEY
+        ]
+        call(path: TRANDING_URL, method: .get, parameters: parameters, onSuccess: onSuccess, onFailure: onFailure)
+        }
+    
+    public func getGIFURLsByName(key: String, onSuccess: @escaping(JSON) -> Void, onFailure: @escaping(Error) -> Void) {
         let parameters: Parameters = [
             "limit": 18,
             "offset": 0,
@@ -32,7 +43,6 @@ class ServerCommunication {
     private func call(path: String, method: HTTPMethod, parameters: Parameters?, onSuccess: @escaping(JSON) -> Void, onFailure: @escaping(Error) -> Void) {
         AF.request(path, method: method, parameters: parameters, encoding: URLEncoding(destination: .queryString))
             .responseJSON { response in
-//                debugPrint(response)
                 switch response.result {
                     case let .success(value):
                         onSuccess(JSON(value))

@@ -8,6 +8,5 @@ target 'GifSearch' do
   # Pods for GifSearch
 pod 'Alamofire'
 pod 'SwiftyJSON'
-pod 'FLAnimatedImage'
 
 end
