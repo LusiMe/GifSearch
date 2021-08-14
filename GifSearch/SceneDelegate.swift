@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  GifSearch
 //
-//  Created by Mark Parfenov on 08/08/2021.
+//  Created by Luda Parfenova on 08/08/2021.
 //
 
 import UIKit
